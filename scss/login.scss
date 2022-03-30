@@ -1,0 +1,146 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');
+@import "layout";
+
+.login{
+    display: flex;
+    @include pad{
+       flex-direction: column;
+    }
+}
+
+.login-detail{
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include pad{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+}
+
+.login-account{
+    background: $color-primary;
+    padding-top: 40px;
+    padding-bottom: 9px;
+
+    p{
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color:$color-secondary;
+        text-align: center;
+        @include pad{
+            margin-top: 20px;
+            padding-bottom: 146px;
+            position: relative;
+        }
+    }
+    input{
+        margin-left: 40px;
+        margin-bottom: 16px;
+    }
+    span{
+        color:white;
+    }
+    
+}
+
+.login-input{
+    position: relative;
+    justify-content: center;
+    label{
+       position: absolute;
+       margin-right: 20px;
+       z-index: 2;
+       left: 50px;
+       top: 20%;
+       i{
+           color:$color-primary;
+           display: block;
+       }
+    }
+    input{
+        width: 80%;
+        padding-left: 40px;
+        height: 56px;
+        font-size: 16px;
+        background:$color-secondary;
+        color: #8DA291;
+        border: none;
+         &:focus{outline: #FFE180 3px solid;}
+    }
+
+}
+
+.login-btn{
+    background: $color-success;
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        text-align: center;
+        color: $color-primary;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: bold;
+        &:hover{
+            background: $color-info;
+        }
+
+    }
+}
+.social-media{
+    width: 50%;
+    background: $color-secondary;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad{
+        width: 100%;
+        flex-direction: row;
+        position: absolute;
+        top: 110px;
+        padding: 30px;
+    }
+    p{
+        text-align: center;
+        font-size: 24px;
+        color: #8DA291;
+        margin-top: 40px;
+        margin-bottom: 36px;
+        @include pad{
+            display: none;
+        }
+    }
+    .link{
+        width: 80%;
+        margin-bottom: 16px;
+        @include pad{
+            margin-bottom:0;   
+        }
+        
+    }
+    a{
+        border: 1px solid $color-secondary;
+        display: block;
+        background: white;
+        height: 56px;
+        text-align: center;
+        line-height: 52px;
+        &:hover{
+            background: $color-success;  
+        }
+    }
+    img{
+        width: 30%;
+        @include pad{
+            width: 60%;
+        }
+    }
+    
+}

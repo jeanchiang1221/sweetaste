@@ -1,0 +1,32 @@
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    @include pad{
+        justify-content:center;    
+    }
+
+    i{
+        line-height: 60px;
+        &:hover{
+            color: white;
+        }
+    }
+
+    li{
+        width: 60px;
+        height: 60px;
+        border: 1px #EAF0ED solid;
+        line-height: 60px;
+        text-align: center;
+    }
+    a{
+        color: #3F5D45;
+        font-size: 28px;
+        &:hover{
+            background: #3F5D45;
+            color: #EAF0ED;
+        }
+    }
+}
+

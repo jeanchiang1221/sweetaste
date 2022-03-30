@@ -1,0 +1,255 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');
+@import "layout";
+
+.shopping-cart-wrap{
+    display: flex;
+    @include pad{
+    flex-direction: column;   
+    }
+}
+
+.shopping-cart{
+    width: 70%;
+    margin-right: 2%;
+    margin-bottom: 59px;
+    @include pad{
+        width: 90%;
+        margin-right: 5%;  
+        margin-left: 5%; 
+        margin-bottom: 30px;
+        }
+    h2{
+        height: 65px;
+        background:$color-secondary;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 65px;
+        color: $color-primary;
+        margin-bottom: 33px;
+        @include pad{
+        margin-top: 84px;
+        }
+
+    }
+    
+}
+
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $color-secondary;
+    margin-bottom: 20px;
+    @include pad{
+        flex-direction: column;
+    }
+
+    a{
+        margin-left: auto;
+        color: $color-secondary;
+        &:hover{
+            color: $color-primary;
+        }
+        @include pad{
+           display: none;
+        }
+    }
+
+    hr{
+        display: none;
+        @include pad{
+            display: block;
+        }
+    }
+
+
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    @include pad{
+        margin-right: auto;
+        padding-bottom: 10px;
+    }
+
+
+}
+
+.product-img{
+    height: 110px;
+    width: 110px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 38px;
+    @include pad{
+        margin-right: 2%;
+        width: 157px;
+        height: 106px;
+    }
+}
+
+.img1{
+    background-image: url("https://chupai.github.io/Sweetaste/img/product/product8.jpg");
+}
+
+.img2{
+    background-image: url("https://chupai.github.io/Sweetaste/img/product/product2.jpg");
+}
+
+.img3{
+    background-image: url("https://chupai.github.io/Sweetaste/img/product/product7.jpg");
+}
+
+.product-detail{
+    display: flex;
+    @include pad{
+        flex-direction: column;
+    }
+}
+
+.product-info{
+    margin-right: 38px;
+    @include pad{
+        margin-bottom: 8px;
+    }
+
+}
+
+.product-name{
+    color: $color-primary;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.product-price{
+    color: $color-primary;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.num {
+    display: flex;
+    margin-right: 38px;
+  
+    li{
+        width: 48px;
+        height: 48px;
+        border: 1px solid $color-secondary;
+        font-size: 16px;
+        line-height: 48px;
+        text-align: center;
+        color: $color-primary;
+    }
+    a{
+        color: $color-primary;
+    }
+    a:hover{
+        background:$color-primary;
+        color: white;
+    }
+    
+}
+
+.product-total-price{
+    font-size: 20px;
+    color: $color-primary;
+    margin-right: 10px;
+    @include pad{
+        line-height: 45px;
+        font-weight: bold;
+        margin-left: auto;
+    }
+}
+
+.order-wrap{
+    width: 28%;
+    background:$color-primary;
+    height: fit-content;
+    @include pad{
+        width: 100%;
+        background: white;
+        }
+}
+
+.order{
+    h2{
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        line-height: 3;
+        border-bottom: 1px solid $color-secondary;
+        margin-bottom: 16px;
+        @include pad{
+            color:$color-primary;
+            background: $color-secondary;
+        }
+    }
+ 
+}
+
+.order-info{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.sum{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    @include pad{
+        color:$color-primary;
+    }
+}
+
+.freight{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    @include pad{
+        color:$color-primary;
+    }
+}
+
+.total-sum{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    @include pad{
+        color:$color-primary;
+    }
+}
+
+.order-btn a{
+    display: block;
+    width: 100%;
+    background: $color-success;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    color: $color-primary;
+    font-weight: bold;
+    &:hover{
+        background: $color-info; 
+    }
+    
+}

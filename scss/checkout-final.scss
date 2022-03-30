@@ -1,0 +1,64 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');
+@import "layout";
+
+
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 460px;
+    width: 100%;
+    background-image: url("https://chupai.github.io/Sweetaste/img/hero/success.jpg");
+    margin-bottom: 60px;
+    @include pad{
+        margin-bottom: 0;
+    }
+    a{
+        display: block;
+        background: $color-success;
+        width: 300px;
+        height: 65px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 65px;
+        color:$color-primary;
+        font-weight: bold;
+        margin: 0 auto;
+        @include pad{
+            width: 100%;
+            margin-top: 55px;
+        }
+        &:hover{
+            background: $color-info;   
+        }
+    }
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    @include pad{
+        padding-top: 210px;
+    }
+
+
+}
+
+.pay-progress{
+    margin: 0 auto;
+    width: 146px;
+    margin-bottom: 31px;
+
+}
+
+.pay-success{
+    margin: 0 auto;
+    width: 146px;
+    margin-bottom: 51px;
+}

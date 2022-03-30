@@ -1,0 +1,79 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&display=swap');
+@import "layout";
+@import "favoriteBtn";
+@import "productCard";
+@import "pagination";
+
+    
+.banner{
+    margin-bottom: 60px;
+    background-image:url("https://chupai.github.io/Sweetaste/img/hero/product.jpg");
+    height: 496px;
+    background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  @include pad{
+      margin-bottom: 0;
+  }
+
+}
+
+.banner_slogan{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    writing-mode: vertical-rl;
+    color: #3F5D45;
+    font-size: 36px;
+    line-height: 1.5;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 6px;
+    @include pad{
+        top: 100px;
+    }
+}
+
+.content{
+    display: flex;
+    margin-bottom: 60px;
+    @include pad{
+        flex-direction: column;   
+        margin-bottom: 0;
+    }
+
+}
+
+.category{
+    width: 40%;
+    min-width: 200px;
+    @include pad{
+        width: 100%;
+        margin-bottom: 30px;   
+    }
+
+    ul>li{
+        text-align: center;
+        line-height: 65px;
+        height: 65px;
+        font-size: 24px;
+        font-weight: bold;
+        border: 1px #EAF0ED solid;
+    }
+    a{
+        color:  #3F5D45;
+        &:hover{
+            background: #EAF0ED;
+        }
+    }
+    
+}
+
+.category-title{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+

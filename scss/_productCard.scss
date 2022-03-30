@@ -1,0 +1,110 @@
+
+
+.products{
+    max-width: 650px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        width: 46%;
+        color: #3F5D45;
+        height: 436px;
+        @include pad{
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 30px;   
+        }
+    }
+}
+
+.product-card{
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+
+.product-image{
+    position: relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 315px;
+    p{
+        position: absolute;
+        left: 20px;
+        background: #3F5D45;
+        color: #EAF0ED;
+        text-align: center;
+        width: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 16px;
+    }
+}
+
+.image1{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item1.jpg?raw=true");
+
+}
+.image2{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item2.jpg?raw=true");
+
+}
+.image3{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item3.jpg?raw=true");
+
+}
+.image4{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item4.jpg?raw=true");
+
+}
+.image5{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item5.jpg?raw=true");
+
+}
+.image6{
+    background-image: url("https://github.com/icguanyu/sweetaste/blob/master/img/item6.jpg?raw=true");
+
+}
+
+
+.product{
+    display: flex;
+    line-height: 56px;
+    text-align: center;
+    font-size: 20px;
+
+}
+.product-name{
+    width: 60%;
+    border: 1px #EAF0ED solid;
+}
+.product-price{
+    width: 40%;
+    border: 1px #EAF0ED solid;
+}
+
+.product-price{
+    font-weight: bold;
+}
+
+.product-card{
+    border: 1px #EAF0ED solid;
+    a{
+        background: #EAF0ED;
+        color: #3F5D45;
+        text-align: center;
+        line-height: 62px;
+        font-size: 24px;
+        font-weight: bold;
+    &:hover{
+            background: #3F5D45;
+            color: #EAF0ED;
+        
+        }
+        
+    }
+}

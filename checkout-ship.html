@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetaste</title>
+    <link rel="logo icon" href="https://github.com/doraHLC/sweetaste/blob/main/img/logo-dark.png?raw=true">
+    <link rel="stylesheet" href="./css/checkout-ship.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- 漢堡選單的menu -->
+            <a href="#" class="show-menu"><i class="material-icons md-24 menu-icon">menu</i></a>
+            <a href="home.html" class="header-logo"></a>
+            <div class="header-menu">
+                <ul class="header-menu-list">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="index.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </div>
+            <a href="shopping-cart.html"><i class="material-icons md-24 shopping-cart-icon">shopping_cart</i></a>
+        </div>
+    </div>
+    <!-- 表頭-end-->
+
+<div class="checkout-wrap container">
+    <div class="shipment">
+        <div class="title">
+            <h2>運送</h2>
+            <img src="https://dorahlc.github.io/sweetaste/img/bar_delivery.svg" alt="">
+        </div>
+        <form action="">
+            <fieldset>
+                <label class="w-50 mr-1" for="">姓氏<br>
+                    <input class="w-100" type="text" id="lastName"  placeholder="王" required>
+                </label>
+                <label class="w-50" for="">名字<br>
+                    <input class="w-100" type="text" id="firstName"  placeholder="小明" required>
+                </label>
+
+                <label class="w-100" for="">電話<br>
+                    <input  class="w-100" type="phone" placeholder="0912-345-678">
+                </label>
+
+                <label class="w-100" for="">地址<br>
+                    <select class="w-50 mr-1" name="city" id="city" required>
+                        <option value="請選擇" selected>請選擇</option>
+                        <option value="臺北市">臺北市</option>
+                        <option value="新北市">新北市</option>
+                        <option value="新北市">台中市</option>
+                        <option value="新北市">台南市</option>
+                        <option value="新北市">高雄市</option>
+                    </select>
+                    <select class="w-50" name="zone" id="zone" required>
+                        <option value="請選擇" selected>請選擇</option>
+                        <option value="新興區">新興區</option>
+                        <option value="前金區">前金區</option>
+                        <option value="苓雅區">苓雅區</option>
+                        <option value="鼓山區">鼓山區</option>
+                    </select>
+                    <input  class="w-100" type="text" placeholder="幸福路520號" required>
+                </label>
+                
+            </fieldset>
+        </form>
+        <a href="checkout-pay.html">下一步</a>
+
+    </div>
+
+    <div class="order-wrap">
+        <div class="order">
+            <h2>訂單摘要</h2>
+            <div class="order-info">
+                
+                <div class="sum">
+                    <p>小計</p>
+                    <p>NT $2,700</p>
+                </div>
+                <div class="freight">
+                    <p>運費</p>
+                    <p>NT $300</p>
+                </div>
+                <div class="total-sum">
+                    <p>總計</p>
+                    <p>NT $3,000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="shopping-cart">
+            <h2>購物清單</h2>
+            <ul>
+                <li class="cart-items">
+                    <div class="product">
+                        <div class="product-img img1"></div>
+                        <div class="product-detail">
+                            <div class="product-info">
+                                <p class="product-name">焦糖馬卡龍 <span>(2)</span></p>
+                                <p class="product-total-price">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cart-items">
+                    <div class="product">
+                        <div class="product-img img2"></div>
+                        <div class="product-detail">
+                            <div class="product-info">
+                                <p class="product-name">焦糖馬卡龍 <span>(2)</span></p>
+                                <p class="product-total-price">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="cart-items">
+                    <div class="product">
+                        <div class="product-img img3"></div>
+                        <div class="product-detail">
+                            <div class="product-info">
+                                <p class="product-name">焦糖馬卡龍 <span>(2)</span></p>
+                                <p class="product-total-price">NT$ 900</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+  <!-- 表尾-start -->
+       <div class="mail">
+        <div class="container">
+            <div class="mail-logo">
+
+                <img src="https://chupai.github.io/Sweetaste/img/logo/logo-light.svg" alt="">
+                <p>訂閱你我的甜蜜郵件</p>
+
+            </div>
+            <div class="mail-subscribe">
+                <label for="mail"><i class="material-icons md-24">email</i></label>
+                <input type="text" placeholder="請輸入email">
+                <div class="mail-send">
+                    <a href="#"><i class="material-icons md-24">arrow_forward</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-detail">
+                <div class="footer-logo">
+                    <img src="https://chupai.github.io/Sweetaste/img/logo/logotype.svg" alt="">
+                    <p>07-1234-5678
+                        <br>sweetaste@email.com
+                        <br>800 高雄市新興區幸福路520號
+                    </p>
+                </div>
+                <div class="footer-slogan">
+                    <h2 class="footer_slogan">今天是個―― <br>&nbsp&nbsp吃甜點的好日子。</h2>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-link">
+                    <a href="#"><img src="https://chupai.github.io/Sweetaste/img/icon/ic-line@.svg" alt=""></a>
+                    <a href="#"><img src="https://chupai.github.io/Sweetaste/img/icon/ic-facebook.svg" alt=""></a>
+                </div>
+                <p>©2018 Sweetaste* All Rights Reserved </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/all.js"></script>
+
+</body>
+
+</html>
